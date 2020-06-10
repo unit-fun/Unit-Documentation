@@ -27,6 +27,47 @@ Returns the global environment for the LocalScript state.
 ```
 Returns the Lua registry.
 
+## Keyboard & Mouse Functions
+```lua
+<void> keypress(<int> keycode)
+```
+Simulates a key press for *keycode*. More information about keycodes can be found here: http://keycode.info/
+
+```lua
+<void> mouse1click(<void>)
+```
+Simulates a left mouse click.
+
+```lua
+<void> mouse1press(<void>)
+```
+Simulates a left mouse press without releasing.
+
+```lua
+<void> mouse1release(<void>)
+```
+Simulates a left mouse release.
+
+```lua
+<void> mouse2click(<void>)
+```
+Simulates a right mouse click.
+
+```lua
+<void> mouse2press(<void>)
+```
+Simulates a right mouse press without releasing.
+
+```lua
+<void> mouse2release(<void>)
+```
+Simulates a right mouse release.
+
+```lua
+<void> mousemoverel(<int> x, <int> y)
+```
+Moves to cursor to the provided *x* and *y* coordinates.
+
 ## Hooking Functions
 ```lua
 <function> newcclosure(<function> f)
