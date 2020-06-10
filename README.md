@@ -104,7 +104,7 @@ Pushes a new CClosure that uses function *f* upon calling.
 ```lua
 <function> setthreadcontext(<int> identity)
 ```
-Sets Unit's identity to *identity
+Sets Unit's identity to *identity*
 
 ```lua
 <objects> game:GetObjects(<string> contenturl)
