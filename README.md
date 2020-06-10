@@ -11,6 +11,27 @@ Loads *chunk* as a lua script, and returns it if compiled successfully. If there
 ```
 Returns *true or false* based on if *f* is an LClosure.
 
+## Table Modification Functions
+```lua
+<table, nil> getrawmetatable(<T> value)
+```
+Retrieve the metatable of value regardless of value's metatable's *\_\_metatable* field. Returns *nil* if it doesn't exist.
+
+```lua
+<void> makereadonly(<table> table)
+```
+Sets *table*'s read-only value to *true*.
+
+```lua
+<void> makewriteable(<table> table)
+```
+Sets *table*'s read-only value to *false*.
+
+```lua
+<bool> isreadonly(<table> table)
+```
+Returns *true or false* based off of *table*'s read-only condition.
+
 ## Environment Functions
 ```lua
 <table> getgenv(<void>)
@@ -64,6 +85,11 @@ Simulates a right mouse press without releasing.
 Simulates a right mouse release.
 
 ```lua
+<void> mousemoveabs(<int> x, <int> y)
+```
+Moves to cursor to the provided *x* and *y* coordinates.
+
+```lua
 <void> mousemoverel(<int> x, <int> y)
 ```
 Moves to cursor to the provided *x* and *y* coordinates.
@@ -73,3 +99,29 @@ Moves to cursor to the provided *x* and *y* coordinates.
 <function> newcclosure(<function> f)
 ```
 Pushes a new CClosure that uses function *f* upon calling.
+
+## Unit Library
+```lua
+<function> setthreadcontext(<int> identity)
+```
+Sets Unit's identity to *identity
+
+```lua
+<objects> game:GetObjects(<string> contenturl)
+```
+Returns an array of instances from the *contenturl*. For more information, visit the official roblox documentation; https://developer.roblox.com/en-us/api-reference/function/DataModel/GetObjects
+
+```lua
+<string> game:HttpGet(<string> url)
+```
+Returns content/text at *url*.
+
+```lua
+<string> game:HttpGetAsync(<string> url, <bool> cache)
+```
+Returns content/text at *url*, if *cache* is *true*, the request caches the response.
+
+```lua
+<void> setclipboard(<string> data)
+```
+Sets *data* to clipboard.
