@@ -1,4 +1,10 @@
 # Unit Lua API Documentation
+### Quick Navigation
+[Reflection Functions](#Reflection-Functions)\
+[Table Modification Functions](#Table-Modification-Functions)\
+[Keyboard and Mouse Functions](#Keyboard-and-Mouse-Functions)\
+[Hooking Functions](#Hooking-Functions)\
+[Unit Library](#Unit-Library)
 
 ## Reflection Functions
 ```lua
@@ -48,7 +54,7 @@ Returns the global environment for the LocalScript state.
 ```
 Returns the Lua registry.
 
-## Keyboard & Mouse Functions
+## Keyboard and Mouse Functions
 ```lua
 <void> keypress(<int> keycode)
 ```
