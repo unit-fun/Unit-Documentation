@@ -144,6 +144,11 @@ Creates a new drawable object. *type* must be *"Circle"*, *"Line"*, *"Box"*, or 
 ```
 Clears the Drawing canvas.
 
+```lua
+<int> DrawingLib.DefaultFont
+```
+A value between *1* and *21*. Defaults to *21*
+
 ### Drawable (Base Class)
 ```lua
 <string> ClassName [readonly]
