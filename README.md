@@ -131,3 +131,48 @@ Returns content/text at *url*, if *cache* is *true*, the request caches the resp
 <void> setclipboard(<string> data)
 ```
 Sets *data* to clipboard.
+
+## Drawing Library
+```lua
+<drawable> DrawingLib.Create(<string> type)
+```
+Creates a new drawable object. *type* must be *"Circle"*, *"Line"*, *"Box"*, or *"Text"*.
+
+```lua
+<function> DrawingLib.Clear(<void>)
+```
+Clears the Drawing canvas.
+
+### Drawable (Base Class)
+
+```lua
+<string> ClassName [readonly]
+```
+The type of drawable.
+
+```lua 
+<Vector2> Position
+```
+The position of the drawable. (0, 0) represents the top left corner of the screen.
+
+```lua
+<Color3> Color
+```
+The color of the drawable.
+
+```lua
+<boolean> Visible
+```
+The drawable's visibility.
+
+```
+<int> ZIndex
+```
+The drawable's layer. This integer can be 0 to 25. Drawables on higher layers render over drawables on lower layers.
+
+```
+<float> Transparency
+```
+A value from 0 to 1. A value of 1 meeans the drawable is transparent.
+
+### Circle
