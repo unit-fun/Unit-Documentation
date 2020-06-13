@@ -5,6 +5,7 @@
 [Keyboard and Mouse Functions](#Keyboard-and-Mouse-Functions)\
 [Hooking Functions](#Hooking-Functions)\
 [Unit Library](#Unit-Library)
+[Drawing Library](#Drawing-Library)
 
 ## Reflection Functions
 ```lua
