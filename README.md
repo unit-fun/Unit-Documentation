@@ -144,7 +144,6 @@ Creates a new drawable object. *type* must be *"Circle"*, *"Line"*, *"Box"*, or 
 Clears the Drawing canvas.
 
 ### Drawable (Base Class)
-
 ```lua
 <string> ClassName [readonly]
 ```
@@ -161,18 +160,183 @@ The position of the drawable. (0, 0) represents the top left corner of the scree
 The color of the drawable.
 
 ```lua
-<boolean> Visible
+<bool> Visible
 ```
 The drawable's visibility.
 
-```
+```lua
 <int> ZIndex
 ```
 The drawable's layer. This integer can be 0 to 25. Drawables on higher layers render over drawables on lower layers.
 
-```
+```lua
 <float> Transparency
 ```
 A value from 0 to 1. A value of 1 meeans the drawable is transparent.
 
+### Line
+```lua
+<Vector2> From
+```
+The line's start position.
+
+```lua
+<Vector2> To
+```
+The line's end position.
+
+```lua
+<float> Thickness
+```
+The line's thickness.
+
+
+```lua
+<float> Transparency
+```
+A value from 0 to 1. A value of 1 meeans the line is transparent.
+
+### Text
+```lua
+<string> Text
+```
+The string to display
+
+```lua
+<string> Position
+```
+The text's position.
+
+```lua
+<float> Size
+```
+The text's font size.
+
+```lua
+<Color3> Color
+```
+The text's color.
+
+```lua
+<bool> Center
+```
+If *true*, text will be centered.
+
+```lua
+<bool> Outline
+```
+If *true*, text will be outlined.
+
+```lua
+<float> Transparency
+```
+A value from 0 to 1. A value of 1 meeans the text is transparent.
+
+```lua
+<Vector2> TextBounds [readonly]
+```
+The width and height of the text.
+
+### Square
+```lua
+<Vector2> Position
+```
+The square's position.
+
+```lua
+<Vector2> Size
+```
+The square's size.
+
+```lua
+<Color3> Color
+```
+The square's color.
+
+```lua
+<float> Thickness
+```
+The square's thickness.
+
+```lua
+<bool> Filled
+```
+If *true*, the square will be filled.
+
+```lua
+<float> Transparency
+```
+A value from 0 to 1. A value of 1 meeans the square is transparent.
+
 ### Circle
+```lua
+<Vector2> Position
+```
+The circle's position.
+
+```lua
+<float> Radius
+```
+The circle's radius.
+
+```lua
+<Color3> Color
+```
+The circle's color.
+
+```lua
+<float> Thickness
+```
+The circle's thickness.
+
+```lua
+<bool> Filled
+```
+If *true*, the circle will be filled.
+
+```lua
+<float> Transparency
+```
+A value from 0 to 1. A value of 1 meeans the circle is transparent.
+
+```lua
+<int> NumSides
+```
+The circle's number of sides.
+
+### Triangle
+```lua
+<Vector2> PointA
+```
+The triangle's first point location.
+
+```lua
+<Vector2> PointB
+```
+The triangle's second point location.
+
+```lua
+<Vector2> PointC
+```
+The triangle's third point location.
+
+```lua
+<Color3> Color
+```
+The triangle's color.
+
+```lua
+<float> Thickness
+```
+The triangle's thickness.
+
+
+```lua
+<bool> Filled
+```
+If *true*, the triangle will be filled.
+
+```lua
+<float> Transparency
+```
+A value from 0 to 1. A value of 1 meeans the triangle is transparent.
