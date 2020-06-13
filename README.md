@@ -133,6 +133,14 @@ Returns content/text at *url*, if *cache* is *true*, the request caches the resp
 ```
 Sets *data* to clipboard.
 
+## Bit Library
+
+```lua
+bit.tobit, bit.tohex, bit.bnot, bit.band, bit.bor, bit.bxor, bit.lshift, bit.rshift, bit.arshift, bit.rol, bit.ror, bit.bswap
+```
+
+Visit http://bitop.luajit.org/api.html for more information.
+
 ## Drawing Library
 ```lua
 <drawable> DrawingLib.Create(<string> type)
