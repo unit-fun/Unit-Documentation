@@ -8,7 +8,7 @@
 [Datamodel Library](#Datamodel-Library)\
 [Unit Library](#Unit-Library)\
 [Console Library](#Console-Library)\
-[Debug Library](#Debug-Library)
+[Debug Library](#Debug-Library)\
 [Bit Library](#Bit-Library)\
 [Drawing Library](#Drawing-Library)
 
