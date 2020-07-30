@@ -4,7 +4,10 @@
 [Table Modification Functions](#Table-Modification-Functions)\
 [Keyboard and Mouse Functions](#Keyboard-and-Mouse-Functions)\
 [Hooking Functions](#Hooking-Functions)\
+[Miscellaneous Functions](#Misc-Functions)
+[Datamodel Library](#Datamodel-Library)\
 [Unit Library](#Unit-Library)\
+[Console Library](#Console-Library)\
 [Bit Library](#Bit-Library)\
 [Drawing Library](#Drawing-Library)
 
