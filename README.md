@@ -161,6 +161,7 @@ Returns the contents of a file located in the *workspace* folder.
 ```lua
 <function> writefile(<string> filename, <string> content)
 ```
+Writes to *filename* the *content* provided.
 
 ```lua
 <function> setthreadcontext(<int> identity)
