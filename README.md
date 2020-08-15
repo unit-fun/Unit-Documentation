@@ -95,6 +95,16 @@ Returns a table of instances within the game.
 ```
 Returns a table of instances with the parent of Nil within the game.
 
+```lua
+<string> getnamecallmethod(<void>)
+```
+Returns current namecall method.
+
+```lua
+<function> setnamecallmethod(<string> method)
+```
+Sets the provided namecall method.
+
 ## Keyboard and Mouse Functions
 ```lua
 <void> keypress(<int> keycode)
@@ -174,14 +184,9 @@ Sets Unit's identity to *identity*
 Sets *data* to clipboard.
 
 ```lua
-<string> getnamecallmethod(<void>)
+<void> getclipboard(<void>)
 ```
-Returns current namecall method.
-
-```lua
-<function> setnamecallmethod(<string> method)
-```
-Sets the provided namecall method.
+Returns the *data* of the clipboard.
 
 ```lua
 <function> filteringbypass(<void>)
@@ -208,13 +213,33 @@ Returns a bool whether the game uses luau or not, (Used for pre-luau stage scrip
 ```
 Fires the click detector of an *instance* by the amount of *times* set.
 
-Example: ```lua
-fireclickdetector(game.Workspace.WHATEVER.ClickDetector, 3)``` OR ```lua
+Example: ```
+fireclickdetector(game.Workspace.WHATEVER.ClickDetector, 3)``` OR ```
 for _,v in pairs(workspace:GetDescendants()) do
 if v:IsA("ClickDetector") then
 fireclickdetector(v)
 end
 end```
+
+```lua
+<function> getfflag(<string> FFlag)
+```
+Returns the value of the specified FFLag.
+
+```lua
+<function> setfflag(<string> FFlag, <int, string> value)
+```
+Sets the value of the specified FFlag. Check https://fflag.eryn.io/ for the list of the current FFlags.
+
+```lua
+<function> onewaysecure(<string>)
+```
+Secures the provided string and caches the provided string in a secure format.
+
+```lua
+<function> onewayrun(<string>)
+```
+Runs the string secured in ``onewaysecure`` format.
 
 ## Datamodel Library
 ```lua
@@ -273,6 +298,16 @@ Returns the provided number in a binary form.
 ```
 Returns the binary in its original form.
 
+```lua
+<function> unit.dumpmode.enable(<void>)
+```
+Opens a console allowing you to view the fetched bytecode (Raw mode - shows constants and easier to read OR Traditional - numbers) of the scripts you clone, Provides an example of how to dump a script.
+
+```lua
+<function> unit.dumpmode.run_bytecode(<string> bytecode)
+```
+Allows you to run bytecode - Best used with unit.dumpmode.enable() ```unit.dumpmode.run_bytecode("01 02 05 70 72 69 6E 74 02 68 69 01 02 00 00 01 06 A3 00 00 00 A4 00 01 00 00 00 00 40 6F 01 02 00 9F 00 02 01 82 00 01 00 03 03 01 04 00 00 00 40 03 02 00 00 00 00 00 00 00 00 00")```
+
 ## Console Library
 ```lua
 <function> console.log(<string> string)
@@ -288,6 +323,10 @@ Returns the binary in its original form.
 
 ```lua
 <function> console.error(<string> string)
+```
+
+```lua
+<function> console.close(<void>)
 ```
 
 ## Bit Library
