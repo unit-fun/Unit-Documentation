@@ -199,11 +199,6 @@ Returns the *data* of the clipboard.
 Bypasses the virginity check located in RealLife.exe
 
 ```lua
-<function> unitfingerprint(<void>)
-```
-Returns the HWID in a string form of the current user. Useful for making paid scripts/hubs.
-
-```lua
 <bool> isluau(<void>)
 ```
 Returns a bool whether the game uses luau or not, (Used for pre-luau stage scripts)
@@ -262,6 +257,11 @@ Returns content/text at *url*, if *cache* is *true*, the request caches the resp
 <function> unit.require(<int> asset)
 ```
 Similar to Roblox's native require function.
+
+```lua
+<function> unit.fingerprint(<void>)
+```
+Returns the HWID in a string form of the current user. Useful for making paid scripts/hubs.
 
 ```lua
 <function> unit.randomstring(<int> size)
