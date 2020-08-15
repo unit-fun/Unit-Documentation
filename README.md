@@ -35,17 +35,17 @@ Returns *true* if the current thread is used by Unit.
 Retrieve the metatable of value regardless of value's metatable's *\_\_metatable* field. Returns *nil* if it doesn't exist.
 
 ```lua
-<void> setreadonly(<table> table, <bool> bool)
+<function> setreadonly(<table>, <bool>)
 ```
 Sets *table*'s read-only value to *bool*.
 
 ```lua
-<void> make_readonly(<table> table)
+<function> make_readonly(<table> table)
 ```
 Sets *table*'s read-only value to *true*.
 
 ```lua
-<void> make_writeable(<table> table)
+<function> make_writeable(<table> table)
 ```
 Sets *table*'s read-only value to *false*.
 
