@@ -66,12 +66,12 @@ Returns the environment that is applied to each script executed.
 Returns the global environment for the LocalScript state.
 
 ```lua
-<table> getsenv(<void>)
+<table> getsenv(<Instance>)
 ```
 Grabs the enviorment of the script.
 
 ```lua
-<table> getmenv(<void>)
+<table> getmenv(<Instance>)
 ```
 Grabs the enviorment of the ModuleScript.
 
